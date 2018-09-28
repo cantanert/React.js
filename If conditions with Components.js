@@ -18,12 +18,13 @@ ReactDOM.render(<TonightsPlan/>,document.getElementById('app'));
 // FUNCTION PASSING IN COMPONENT RENDER OPERATION
 
 class Button extends React.Component {
-  scream() {
-    alert('AAAAAAAAHHH!!!!!');
-  }
+    scream() {
+        alert('AAAAAAAAHHH!!!!!');
+    }
 
-  render() {
-    return <button onClick = {this.scream} >AAAAAH!</button>;
-  }
+    render() {
+        return <button onClick = {this.scream} >AAAAAH!</button>;
+    }
 }
+
 ReactDOM.render(<Button/>,document.getElementById('app'));
