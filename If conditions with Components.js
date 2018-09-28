@@ -4,11 +4,11 @@ class TonightsPlan extends React.Component{
     render(){
         if(fiftyFifty){
    			    return ( 
-            <h1>Tonight I'm going out WOOO</h1> 
+            <h1>Tonight Im going out WOOO </h1> 
             ); 
         }else{
     		    return ( 
-            <h1>Tonight I'm going to bed WOOO</h1> 
+            <h1>Tonight Im going to bed WOOO</h1> 
             );
         }	
     }
