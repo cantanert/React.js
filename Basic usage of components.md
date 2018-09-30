@@ -1,6 +1,7 @@
 
-//app.js file:
+app.js file:
 
+```Javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -22,9 +23,11 @@ class Owl extends React.Component{
 
 ReactDOM.render( <Owl/>,  document.getElementById('app'));
 
+```
 
-//index.html file:
+index.html file:
 
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +44,10 @@ ReactDOM.render( <Owl/>,  document.getElementById('app'));
 </body>
 
 </html>
+```
 
-// APP ID'li html alanını app.js dosyası ile manipule edip, dinamik olarak değiştiriyoruz. Burda owl adında bir const
-// tanımlayıp title ve src attributeleri veriyoruz. daha sonra owl adında bir component tanımlayıp, bu verileri ön planda 
-// nasıl kullanmak istiyorsak ona göre design ediyoruz.
+ APP ID'li html alanını app.js dosyası ile manipule edip, dinamik olarak değiştiriyoruz. Burda owl adında bir const
+ tanımlayıp title ve src attributeleri veriyoruz. daha sonra owl adında bir component tanımlayıp, bu verileri ön planda 
+ nasıl kullanmak istiyorsak ona göre design ediyoruz.
+
+ 
