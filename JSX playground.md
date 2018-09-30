@@ -103,17 +103,19 @@ ____________________________
  
  When a JSX element is compiled, the compiler transforms the JSX element into the method that you see above: 
  React.createElement(). Every JSX element is secretly a call to React.createElement().
+ ____________________________
+
 
  ### JSX expression:
-	```Javascript
-	const h1 = <h1>Hello world</h1>;
-	```
+```Javascript
+const h1 = <h1>Hello world</h1>;
+```
 	
- ### can be rewritten without JSX, like this:
-	```Javascript
-	const h1 = React.createElement( "h1", null, "Hello, world");
-	```
-
+ ### can be rewritten without JSX, like this:
+```Javascript	
+const h1 = React.createElement( "h1", null, "Hello, world");
+```	
+_____________________________
 
 ## WORKFLOW
  1. A JSX element renders.
