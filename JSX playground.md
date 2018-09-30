@@ -12,7 +12,6 @@ ReactDOM.render(myDiv,document.getElementById('app'));
 const theBestString = 'tralalalala i am da best';
 ReactDOM.render(<h1>{theBestString}</h1>, document.getElementById('app'));
 ```
-__________
 
 ### Inject JavaScript into a JSX expression (ONCLICK EVENT)
 
@@ -49,7 +48,7 @@ if (coinToss()==='heads'){
 }
 ReactDOM.render(img,document.getElementById('app'));
 ```
-__________________________
+
 ### Condition ? true : false OPERATORS
 
 ```Javascript
@@ -62,14 +61,14 @@ const pics = {
 };
 const img = <img src={pics[coinToss()=='heads' ? 'kitty' : 'doggy']} />;
 ```
-____________________________
+
 ## Another Example
 ```HTML
 <h1>
         {this.state.authorized ? 'Contact' : 'Enter the Password' }  
 </h1>
 ```
-_____________________________
+
 ## && CONDITIONS
 
 ```Javascript
@@ -86,7 +85,7 @@ const favoriteFoods = (
   </div>
 );
 ```
-__________________________
+
 ## .map() CALL
 
 ```Javascript
@@ -94,12 +93,12 @@ const people = ['Rowe', 'Prevost', 'Gare'];
 const peopleLis = people.map(person =><li>{person}</li>);
 ReactDOM.render(<ul>{peopleLis}</ul>,document.getElementById('app'));
 ```
-____________________________
+
  ## JSX = React.createElement();
  
  When a JSX element is compiled, the compiler transforms the JSX element into the method that you see above: 
  React.createElement(). Every JSX element is secretly a call to React.createElement().
- ____________________________
+ 
  ### JSX expression:
 ```Javascript
 const h1 = <h1>Hello world</h1>;
@@ -109,7 +108,7 @@ const h1 = <h1>Hello world</h1>;
 ```Javascript	
 const h1 = React.createElement( "h1", null, "Hello, world");
 ```
-_____________________________
+
 
 ### WORKFLOW
 
