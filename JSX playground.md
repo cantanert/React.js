@@ -7,14 +7,14 @@ ReactDOM.render(myDiv,document.getElementById('app'));
 
 
 
- STRING VARIABLE USING IN RENDER
+ ### STRING VARIABLE USING IN RENDER
 ```Javascript
 const theBestString = 'tralalalala i am da best';
 ReactDOM.render(<h1>{theBestString}</h1>, document.getElementById('app'));
 ```
 __________
 
-Inject JavaScript into a JSX expression (ONCLICK EVENT)
+### Inject JavaScript into a JSX expression (ONCLICK EVENT)
 
 ```Javascript
 function makeDoggy(e) {
@@ -30,7 +30,7 @@ ReactDOM.render(kitty, document.getElementById('app'));
 
 ```
 
- If Conditions
+ ### If Conditions
 
 ```Javascript 
 function coinToss() {
@@ -49,10 +49,8 @@ if (coinToss()==='heads'){
 }
 ReactDOM.render(img,document.getElementById('app'));
 ```
-
-
-
-Condition ? true : false OPERATORS
+__________________________
+### Condition ? true : false OPERATORS
 
 ```Javascript
 function coinToss () {
@@ -65,13 +63,13 @@ const pics = {
 const img = <img src={pics[coinToss()=='heads' ? 'kitty' : 'doggy']} />;
 ```
 ____________________________
-
 ## Another Example
 ```HTML
 <h1>
         {this.state.authorized ? 'Contact' : 'Enter the Password' }  
 </h1>
 ```
+_____________________________
 ## && CONDITIONS
 
 ```Javascript
@@ -89,7 +87,6 @@ const favoriteFoods = (
 );
 ```
 __________________________
-
 ## .map() CALL
 
 ```Javascript
@@ -98,14 +95,11 @@ const peopleLis = people.map(person =><li>{person}</li>);
 ReactDOM.render(<ul>{peopleLis}</ul>,document.getElementById('app'));
 ```
 ____________________________
-
  ## JSX = React.createElement();
  
  When a JSX element is compiled, the compiler transforms the JSX element into the method that you see above: 
  React.createElement(). Every JSX element is secretly a call to React.createElement().
  ____________________________
-
-
  ### JSX expression:
 ```Javascript
 const h1 = <h1>Hello world</h1>;
@@ -114,10 +108,11 @@ const h1 = <h1>Hello world</h1>;
  ### can be rewritten without JSX, like this:
 ```Javascript	
 const h1 = React.createElement( "h1", null, "Hello, world");
-```	
+```
 _____________________________
 
-## WORKFLOW
+### WORKFLOW
+
  1. A JSX element renders.
  2. The entire virtual DOM updates.
  3. The virtual DOM "diffs," comparing its current self with its previous self.
