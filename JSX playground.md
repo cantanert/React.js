@@ -105,7 +105,7 @@ ____________________________
  React.createElement(). Every JSX element is secretly a call to React.createElement().
 
  ### JSX expression:
-	```JAvascript
+	```Javascript
 	const h1 = <h1>Hello world</h1>;
 	```
 	
