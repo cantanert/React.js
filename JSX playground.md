@@ -73,6 +73,7 @@ ____________________________
 </h1>
 ```
 ## && CONDITIONS
+
 ```Javascript
 const judgmental = Math.random() < 0.5;
 const favoriteFoods = (
@@ -87,33 +88,38 @@ const favoriteFoods = (
   </div>
 );
 ```
-
+__________________________
 
 ## .map() CALL
+
 ```Javascript
 const people = ['Rowe', 'Prevost', 'Gare'];
 const peopleLis = people.map(person =><li>{person}</li>);
 ReactDOM.render(<ul>{peopleLis}</ul>,document.getElementById('app'));
 ```
-
+____________________________
 
  ## JSX = React.createElement();
+ 
  When a JSX element is compiled, the compiler transforms the JSX element into the method that you see above: 
  React.createElement(). Every JSX element is secretly a call to React.createElement().
 
- JSX expression:
+ ### JSX expression:
+	```JAvascript
 	const h1 = <h1>Hello world</h1>;
-
-can be rewritten without JSX, like this:
+	```
+	
+ ### can be rewritten without JSX, like this:
+	```Javascript
 	const h1 = React.createElement( "h1", null, "Hello, world");
+	```
 
 
-
-// WORKFLOW
-// 1- A JSX element renders.
-// 2- The entire virtual DOM updates.
-// 3- The virtual DOM "diffs," comparing its current self with its previous self.
-// 4- Part of the real DOM updates.
-// 5- The screen looks different than it used to.
+## WORKFLOW
+ 1. A JSX element renders.
+ 2. The entire virtual DOM updates.
+ 3. The virtual DOM "diffs," comparing its current self with its previous self.
+ 4. Part of the real DOM updates.
+ 5. The screen looks different than it used to.
 
 
