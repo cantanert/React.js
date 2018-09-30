@@ -1,5 +1,4 @@
 
-```Javascript
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -20,4 +19,3 @@ Button.defaultProps = {text:"I am a button" };
 ReactDOM.render( <Button text="w"/>,document.getElementById('app'));
 
 
-```
