@@ -90,4 +90,6 @@ export class Button extends React.Component {
 - There are two components in a collaboration for understanding components basic workflows.
 - We must to create constructor if we want to give state. We must to initialize.
 - Parameter passing with props
+- Passing data via props from parent to child
 - Method binding in constructor
+
